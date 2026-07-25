@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ali can bekar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>ali can bekar</h1>
+  <p>
+    hi, i'm ali can — a postdoctoral researcher working on machine learning for fluid dynamics
+    and weather prediction at the helmholtz-zentrum hereon, within the model-driven machine learning group.
+    prior to arriving there, i completed my phd in aerospace engineering
+    at the university of arizona, where i worked on nonlocal physics-informed machine learning algorithms.
+    beyond my academic pursuits, i have a keen interest in linguistics and cinema.
+  </p>
+
+  <nav>
+    <a href="index.html">home</a>
+    <a href="blog.html">blog</a>
+  </nav>
+
+  <div class="section">
+    <h2>research</h2>
+    <ul>
+      <li>
+        ai-based weather and s2s prediction
+        <span class="meta">lately, i've been working on data-driven probabilistic weather prediction models — mostly graph-based and trained on era5. my aim is to address some of the persistent issues with ai-based weather prediction, such as long-term stability and anomaly prediction. beating the state of the art along the way would be a nice bonus.</span>
+      </li>
+      <li>
+        pde emulation with physical constraints
+        <span class="meta">i recently published a paper on this topic at neurips examining the impact of resolution coarsening on pde emulation accuracy and the role of physical constraints in latent-space models. i'm now working on more differentiable physics models — there is a lot to explore, but i try to balance solving real problems with satisfying my curiosity. i guess i also like to see how ml models interact with physical solvers.</span>
+      </li>
+      <li>
+        data assimilation and ml-based emulators
+        <span class="meta">i'm fairly new to this field, but i enjoy exploring the intersection of da and ml-based emulators. having adjoints for free in variational da is appealing, and a couple of experiments have produced some unintuitive results — giving me a gut feeling that there's something interesting here worth exploring.</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>selected publications</h2>
+    <ul>
+      <li>
+        <a class="paper-link" href="https://proceedings.neurips.cc/paper_files/paper/2025/file/36de296ba40068cf44bc5d1f3b15870f-Paper-Conference.pdf">[2026] hybrid latent representations for pde emulation</a>
+        <span class="meta">neurips 2026</span>
+      </li>
+      <li>
+        <a class="paper-link" href="https://www.researchsquare.com/article/rs-10406658/v1">[2026] skillful seasonal forecasts with a freely evolving ai weather model</a>
+        <span class="meta">preprint</span>
+      </li>
+      <li>
+        <a class="paper-link" href="https://doi.org/10.1016/j.cma.2023.115944">[2023] an unsupervised latent/output physics-informed convolutional-lstm network for solving partial differential equations using peridynamic differential operator</a>
+        <span class="meta">computer methods in applied mechanics and engineering</span>
+      </li>
+      <li>
+        <a class="paper-link" href="https://doi.org/10.1016/j.cma.2021.114012">[2021] a nonlocal physics-informed deep learning framework using the peridynamic differential operator</a>
+        <span class="meta">computer methods in applied mechanics and engineering</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>contact</h2>
+    <ul>
+      <li>email — <span id="email-link"></span></li>
+      <li>google scholar — <a href="https://scholar.google.com/citations?user=n3Hec10AAAAJ&hl=en">profile</a></li>
+      <li>github — <a href="https://github.com/alicanbekar">profile</a></li>
+    </ul>
+  </div>
+
+<script>
+  (function() {
+    var u = 'acbekar';
+    var d = 'arizona.edu';
+    var el = document.getElementById('email-link');
+    el.innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+  })();
+</script>
+</body>
+
+</html>
